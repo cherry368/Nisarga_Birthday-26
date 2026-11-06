@@ -1,14 +1,18 @@
-// ═══════════════════════════════════════════════════════════
-//  CONFIGURATION — Change everything about the birthday here
-//  Edit recipient name, sender name, messages, and theme
-// ═══════════════════════════════════════════════════════════
+
+// ==========================================================
+// NISARGA BIRTHDAY WEBSITE — CENTRAL CONFIGURATION
+// Project: Nisarga_Birthday-26
+// Edit all birthday details from this file.
+// ==========================================================
 
 export const config = {
+  // BASIC DETAILS
   recipientName: "Nature!",
   senderName: "Your slightly crazy friend",
   roseCount: 100001,
 
-  letterText: `Hey Beautiful! ❤️ 
+  // BIRTHDAY LETTER
+  letterText: `Hey Nature! ❤️
 
 Happy Birthday! 🎂🥳
 
@@ -46,15 +50,21 @@ Your slightly crazy friend ❤️
 P.S. — Please press the button below.
 I promise it's worth it. 👀🌹`,
 
-  finalMessage: `Happy Birthday ❤️
+  // FINAL BIRTHDAY MESSAGE
+  finalMessage: `Happy Birthday, Nature! ❤️
 
 I hope this year brings you
 more happiness,
 more laughter,
 more adventures,
-and more reasons to smile.
+and countless beautiful memories.
 
-Stay exactly the way you are.
+May you always find reasons to smile,
+strength to chase your dreams,
+and happiness in the little things.
+
+Stay happy, stay blessed,
+and never stop being the beautiful person you are. 🫶✨
 
 And yes...
 I really did make you
@@ -67,28 +77,29 @@ Have an amazing birthday! 🎂❤️
 
 — From your slightly crazy friend 🌹`,
 
-  // Special roses — specific IDs with custom messages
+  // SPECIAL ROSES — CUSTOM MESSAGES
   specialRoseMessages: {
     1: "It had to start somewhere. 🌹",
     100: "A hundred down... only 99,901 to go. 😂",
     1000: "A thousand roses! Still going strong. 🌹",
     10001: "10,000 down... apparently I still wasn't done. 😂",
-    25000: "Quarter of the way there.",
+    25000: "A quarter of the way there. ❤️",
     50000: "Halfway there. Still ridiculous. 😂",
-    75000: "Three quarters done.",
+    75000: "Three quarters done. 🌹",
     100000: "So close...",
-    100001: "You found the last one. 🌹",
+    100001: "You found the last one. This one's special! ❤️🌹",
   } as Record<number, string>,
 
-  // Hidden personal messages on specific roses
+  // HIDDEN PERSONAL MESSAGES
   hiddenMessages: {
     42: "The answer to everything — including why I made so many roses. 😂",
-    12345: "Hope you're smiling right now. ❤️",
+    12345: "Hope you're smiling right now, Nature! ❤️",
     77777: "Lucky rose! 🍀🌹",
-    88888: "Forever and always. ❤️",
+    88888: "Wishing you endless happiness. ❤️",
     99999: "Almost the last one... but not quite. 😂",
   } as Record<number, string>,
 
+  // WEBSITE COLOR THEME
   theme: {
     rosePink: "#e63973",
     crimson: "#c41e3a",
@@ -103,8 +114,8 @@ Have an amazing birthday! 🎂❤️
     dark: "#1a0a1f",
   },
 
+  // AUDIO CONFIGURATION
   audio: {
-    // Placeholder paths — replace with real audio files later
     backgroundMusic: null as string | null,
     gardenAmbience: null as string | null,
     gateSound: null as string | null,
