@@ -8,7 +8,7 @@ export const config = {
   senderName: "Your slightly crazy friend",
   roseCount: 100001,
 
-letterText: `To My Chittipapa ❤️🌷
+  letterText: `To My Chittipapa ❤️🌷
 
 Happy Birthday! 🎂🥳
 
