@@ -1,8 +1,3 @@
-// ═══════════════════════════════════════════════════════════
-//  CONFIGURATION — Change everything about the birthday here
-//  Edit recipient name, sender name, messages, and theme
-// ═══════════════════════════════════════════════════════════
-
 export const config = {
   recipientName: "Nature!",
   senderName: "Your slightly crazy friend",
@@ -10,39 +5,43 @@ export const config = {
 
   letterText: `To My Chittipapa ❤️🌷
 
-Happy Birthday! 🎂🥳
+Happy Birthday! 🎂🥳`,
 
-Do you like roses? 🌹
+  finalMessage: `Happy Birthday ❤️`,
 
-I thought of gifting you something nice for your birthday...
-but honestly, I couldn't find anything worthy enough. 😭😂
+  specialRoseMessages: {
+    1: "It had to start somewhere. 🌹",
+    100: "A hundred down... only 99,901 to go. 😂",
+    1000: "A thousand roses! 🌹",
+    100001: "You found the last one. 🌹",
+  } as Record<number, string>,
 
-So I thought...
-why not do something completely unnecessary instead? 👀
+  hiddenMessages: {
+    42: "The answer to everything. 😂",
+    12345: "Hope you're smiling. ❤️",
+  } as Record<number, string>,
 
-I decided to make you a bouquet.
-And then I may have gotten a LITTLE carried away... 😂🌹🌹🌹
+  theme: {
+    rosePink: "#e63973",
+    crimson: "#c41e3a",
+    magenta: "#ff3b8d",
+    lavender: "#b388eb",
+    peach: "#ffb085",
+    warmGold: "#ffd700",
+    warmOrange: "#ff7849",
+    skyBlue: "#5b8def",
+    cream: "#fff8e7",
+    paper: "#fdf6e3",
+    dark: "#1a0a1f",
+  },
 
-Hopefully this makes your day a little brighter,
-puts a smile on your face,
-and reminds you that you deserve lots of beautiful things. ❤️
+  audio: {
+    backgroundMusic: null as string | null,
+    gardenAmbience: null as string | null,
+    gateSound: null as string | null,
+    revealSound: null as string | null,
+    selectSound: null as string | null,
+  },
+};
 
-You deserve happiness,
-good memories,
-crazy adventures,
-and a LOT of reasons to smile. 🫶✨
-
-Anyway...
-I have something waiting for you.
-Don't worry...
-it's not as crazy as it sounds.
-
-Okay...
-maybe it is. 😂
-
-With lots of love,
-Your slightly crazy friend ❤️
-
-P.S. — Please press the button below.
-I promise it's worth it. 👀🌹`,
-}
+export type BirthdayConfig = typeof config;
